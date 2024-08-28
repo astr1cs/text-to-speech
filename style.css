@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", system-ui;
+
+  background: linear-gradient(45deg, #010758, #490d61);
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+.title h2 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.title h2 span {
+  color: #ff2963;
+}
+textarea {
+  width: 600px;
+  height: 250px;
+  background-color: #403d84;
+  color: #fff;
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+  resize: none;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+
+  &::placeholder {
+    font-size: 16px;
+    color: #ddd;
+  }
+}
+.form {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.form button {
+  background: #ff2963;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 25px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form button img {
+  width: 16px;
+  margin-right: 10px;
+}
+select {
+  flex: 1;
+  color: #fff;
+  background: #403d84;
+  color: #fff;
+  height: 50px;
+  padding: 0 20px;
+  outline: 0;
+  border: 0;
+  border-radius: 35px;
+  appearance: none;
+
+  background-image: url("./images/dropIcon.png");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 20px;
+}
+@media (max-width: 750px) {
+  body {
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .form {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+  }
+  select {
+    width: 370px;
+
+    margin-bottom: 20px;
+  }
+  .title h2 {
+    font-size: 1.8rem;
+  }
+  .form button {
+    display: block;
+    margin: 0 auto;
+  }
+  textarea {
+    width: 450px;
+    margin: 0px 10px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 470px) {
+  textarea {
+    width: 350px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+  }
+  .title h2 {
+    font-size: 1.4rem;
+  }
+  .form {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  select {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: 13px;
+  }
+}
